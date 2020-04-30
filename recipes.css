@@ -247,17 +247,44 @@ Media Queries
     }
 }
 
-@media screen and (min-width: 1224px) and (max-width: 1824px) {
+@media screen and (min-width: 1224px) and (max-width: 2560px) {
     .recipeGridResult {
-        padding: 1em 12em 1em 12em;
+        padding: 1em 0 1em 0;
+        margin: 1em 12em 1em 12em;
     }
     
     .resultImage, .resultImageIngredients {
         width: 50%;
     }
 
+    .stepsImages {
+        width: 30%;
+    }
+
     .resultTime, .resultServing, .resultNutrition {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 4096px) {
+    .recipeGridResult {
+        padding: 1em 0 1em 0;
+        margin: 1em 40em 1em 40em;
+    }
+
+    .resultImage, .resultImageIngredients, .stepsImages {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 4096px) and (max-width: 5120px) {
+    .recipeGridResult {
+        padding: 1em 0 1em 0;
+        margin: 1em 50em 1em 50em;
+    }
+
+    .resultImage, .resultImageIngredients, .stepsImages {
+        width: 30%;
     }
 }
 
