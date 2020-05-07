@@ -392,9 +392,9 @@ Help Modal
     z-index: 99;
     position: fixed;
     bottom: 0;
-    right: 30px;
+    right: 0;
     background-color: #fefefe;
-    width: 50%;
+    width: 75%;
     height: auto;
     margin-left: 45em;
     -webkit-animation-name: slideIn;
@@ -403,13 +403,17 @@ Help Modal
     animation-duration: 0.4s
 }
 
+.modalTitle {
+    margin-top: 7px;
+}
+
 /* The Close Button */
 .close {
     color: white;
     float: right;
     font-size: 50px;
     font-weight: bold;
-    margin-top: -5px;
+    margin-top: -13px;
 }
 
 .close:hover, .close:focus {
@@ -421,7 +425,7 @@ Help Modal
 .modalHeader {
     font-family: 'Calligraphr', sans-serif;
     font-size: 24px;
-    padding: 8px 16px 4px 16px;
+    padding: 8px 16px 1px 16px;
     background-color: #73695C;
     color: white;
 }
