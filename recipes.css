@@ -9,24 +9,39 @@ body {
 h1 {
     font-family: 'Montserrat Extra Bold', sans-serif;
     font-size: 32px;
+    margin-top: 0;
 }
 
 h2 {
     font-family: 'Source Sans Pro Bold', sans-serif;
     font-size: 22px;
+    margin-top: 0;
 }
 
 h3 {
     font-family: 'Roboto Medium', sans-serif;
+    margin-top: 0;
 }
 
 h4 {
     font-family: 'Ubuntu Regular', sans-serif;
+    margin-top: 0;
 }
 
-p {
+p,li {
     font-family: 'Source Sans Pro', serif;
     font-weight: 100;
+    margin-top: 0;
+    list-style: none;
+}
+
+ol {
+    margin: auto;
+    margin-left: -40px;
+}
+
+p b {
+    font-weight: bold;
 }
 
 .mainLogo {
@@ -93,13 +108,18 @@ a.active {
 
 .headerBox .search-container button {
     padding: 6px 10px;
-    margin-top: 8px;
     margin-right: 8px;
     background: #FFEDCB;
     font-size: 17px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .headerBox .search-container button {
+        margin-top: 8px;
+    }
 }
 
 .headerBox .search-container button:hover {
@@ -142,6 +162,7 @@ Home Screen
 
 .gridTitle {
     font-size: 18px;
+    padding-top: 1em;
 }
 
 .gridTitle, .gridSide {
@@ -157,8 +178,8 @@ Result Page CSS
 .recipeGridResult {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .resultImage, .resultImageIngredients {
@@ -171,6 +192,7 @@ Result Page CSS
 
 .resultTitle {
     text-align: center;
+    margin-top: 0;
 }
 
 .resultSide {
@@ -192,6 +214,7 @@ Result Page CSS
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    width: 40%;
 }
 
 /* ===========================================
@@ -211,12 +234,18 @@ Media Queries
     .mainLogo {
         width: 40%;
     }
+
+    .miscInfo {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding: 1em 0 2em 0;
+    }
 }    
 
 /* Desktops and laptops ----------- */
 @media screen and (min-width: 1224px) {
     .recipeGrid {
-        margin: 0 10em 0 10em;
+        margin: auto 2em;
     }
 
     .mainLogo {
@@ -227,86 +256,92 @@ Media Queries
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
     .recipeGrid {
-        margin: 0 20em 0 20em;
+        margin: auto 22em;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
     .recipeGridResult {
-        padding: 1em 6em 1em 6em;
+        margin: auto 2em;
+        padding-bottom: 3em;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1224px) {
     .recipeGridResult {
-        padding: 1em 9em 1em 9em;
-    }
-
-    .resultTime, .resultServing, .resultNutrition {
-        text-align: center;
+        margin: auto 10em;
     }
 }
 
-@media screen and (min-width: 1224px) and (max-width: 2560px) {
+@media screen and (min-width: 1224px) and (max-width: 1424px) {
     .recipeGridResult {
-        padding: 1em 0 1em 0;
-        margin: 1em 12em 1em 12em;
+        margin: auto 15em;
+    }
+}
+
+@media screen and (min-width: 1424px) and (max-width: 1824px) {
+    .recipeGridResult {
+        margin: auto 20em;
     }
     
     .resultImage, .resultImageIngredients {
-        width: 50%;
-    }
-
-    .stepsImages {
-        width: 30%;
-    }
-
-    .resultTime, .resultServing, .resultNutrition {
-        text-align: center;
+        width: 75%;
     }
 }
 
-@media screen and (min-width: 2560px) and (max-width: 4096px) {
+@media screen and (min-width: 1824px) and (max-width: 4096px) {
     .recipeGridResult {
-        padding: 1em 0 1em 0;
-        margin: 1em 40em 1em 40em;
+        margin: auto 30em;
+        text-align: center;
     }
 
-    .resultImage, .resultImageIngredients, .stepsImages {
-        width: 40%;
+    .resultImage, .resultImageIngredients {
+        width: 60%;
     }
 }
 
 @media screen and (min-width: 4096px) and (max-width: 5120px) {
     .recipeGridResult {
-        padding: 1em 0 1em 0;
-        margin: 1em 50em 1em 50em;
+        margin: auto 75em;
+        text-align: center;
     }
 
-    .resultImage, .resultImageIngredients, .stepsImages {
-        width: 30%;
+    .resultImage, .resultImageIngredients {
+        width: 75%;
     }
 }
 
 @media screen and (max-width: 600px) {
     .headerBox .search-container {
         float: none;
-}
-    .headerBox a, .headerBox input[type=text], .headerBox .search-container button {
+    }
+    
+    .headerBox a, .headerBox input[type=text], .headerBox {
         float: none;
-        display: block;
         text-align: left;
-        width: 100%;
-        margin: 0;
+    }
+
+    .search-container button {
+        float: right;
+        z-index: 99;
+    }
+
+    .headerBox input[type=text] {
+        border: 1px solid #fff;  
+        width: 77%;
+        z-index: 1;
+    }
+
+    .headerBox input[type=text], .headerBox .search-container button {
+        border-radius: 0;
         padding: 14px;
+        margin: auto;
     }
-  .headerBox input[type=text] {
-        border: 1px solid #ccc;  
-    }
-}
+}   
 
 /* ===========================================
 =========================================== */
+
 
 /* ===========================================
 
