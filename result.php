@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="recipes.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="javascript.js">
-    <script src="https://kit.fontawesome.com/080c06f1d6.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/jpg" href="./media/logos/thewoodenspoonFavicon.png"/>
-    <title>Recipe Result</title>
-</head>
-<body>
-<div class="bodyContent">
-
-<div class="logoBackground">
-    <a href="index.html"><img src="./media/logos/thewoodenspoonLogo2.png" alt="The Wooden Spoon Logo" class="mainLogo"></a>
-</div>
-    
-<div class="headerBox">
-    <div class="navMenu">
-        <a class="active" href="index.html">Home</a>
-        <a href="">Meat</a>
-        <a href="">Fish</a>
-        <a href="">Vegetarian</a>
-    </div>
-    <div class="search-container">
-      <form action="">
-        <input type="text" placeholder="Search..." name="search">
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </div>
-</div>
+<?php require './includes/_header.php'; ?>
 
 <div class="recipeGridResult">
-    <img class="resultImage" src="https://via.placeholder.com/660x360" alt="">
+    <img class="resultImage" src="https://via.placeholder.com/200x200" alt="">
     <br>
     <h1 class="resultTitle">Recipe Title</h1>
     <h2 class="resultSide">Side Dish</h2>
@@ -64,6 +30,7 @@
             <li>Lorem ipsum dolor sit amet.</li>
           </ol>
         </div>
+    <br>
     <img class="resultImageIngredients" src="https://via.placeholder.com/660x360" alt="">
     <h3 class="resultSteps">Steps</h3>
     <div class="stepsImagesGrid">
@@ -119,7 +86,7 @@
       <h2 class="modalTitle">Instructions</h2>
     </div>
     <div class="modalBody">
-      <p>Select a recipe from the filters above or use the search bar to find what you are looking for.</p>
+      <p>Use the search bar to find what you are looking for, or find a recipe by using the filters above.</p>
     </div>
   </div>
 
@@ -127,6 +94,4 @@
 
 <script src="javascript.js"></script>
 
-</div>
-</body>
-</html>
+<?php require './includes/_footer.php'; ?>

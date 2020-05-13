@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="recipes.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="javascript.js">
-    <script src="https://kit.fontawesome.com/080c06f1d6.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/jpg" href="./media/logos/thewoodenspoonFavicon.png"/>
-    <title>The Wooden Spoon</title>
-</head>
-<body>
-<div class="bodyContent">
+<?php require './includes/_header.php'; ?>
 
-<div class="logoBackground">
-    <a href="index.html"><img src="./media/logos/thewoodenspoonLogo2.png" alt="The Wooden Spoon Logo" class="mainLogo"></a>
-</div>
-    
-<div class="headerBox">
-    <div class="navMenu">
-        <a class="active" href="index.html">Home</a>
-        <a href="">Meat</a>
-        <a href="">Fish</a>
-        <a href="">Vegetarian</a>
-    </div>
-    <div class="search-container">
-      <form action="">
-        <input type="text" placeholder="Search..." name="search">
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </div>
-</div>
-
-<div class="recipeGrid">
-    <a href="result.html" class="recipeHyperlink">
+<div class="recipeGrid">  
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -43,7 +9,7 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -51,64 +17,56 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -116,56 +74,7 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -173,7 +82,56 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -181,56 +139,7 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -238,7 +147,56 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -246,56 +204,7 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
-    <div class="individualRecipe">
-        <img src="https://via.placeholder.com/230x230" alt="">
-        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
-        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
-    </div>
-    </a>
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -303,7 +212,56 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -311,14 +269,22 @@
     </div>
     </a>
     
-    <a href="result.html" class="recipeHyperlink">
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
         <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
     </div>
     </a>
-    <a href="result.html" class="recipeHyperlink">
+    
+    <a href="result.php" class="recipeHyperlink">
+    <div class="individualRecipe">
+        <img src="https://via.placeholder.com/230x230" alt="">
+        <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
+        <p class="gridSide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit?</p>
+    </div>
+    </a>
+    <a href="result.php" class="recipeHyperlink">
     <div class="individualRecipe">
         <img src="https://via.placeholder.com/230x230" alt="">
         <h2 class="gridTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium.</h2>
@@ -340,7 +306,7 @@
       <h2 class="modalTitle">Instructions</h2>
     </div>
     <div class="modalBody">
-      <p>Select a recipe from the grid, from filters above, or use the search bar to find what you are looking for.</p>
+      <p>Select a recipe from the list above. You can also use the search bar to find what you are looking for, or find a recipe by using the filters above.</p>
     </div>
   </div>
 
@@ -348,6 +314,4 @@
 
 <script src="javascript.js"></script>
 
-</div>
-</body>
-</html>
+<?php require './includes/_footer.php'; ?>

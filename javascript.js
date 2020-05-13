@@ -23,3 +23,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Go back a page when this button is clicked.
+function goBack() {
+  window.history.back();
+}

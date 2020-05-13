@@ -60,14 +60,14 @@ p b {
 Navigation
 
 =========================================== */
-
 .navMenu, .search-container {
     font-family: 'Roboto Medium', sans-serif;
 }
 
-a.active {
+a.selected {
     font-weight: 900;
 }
+
 .headerBox {
     overflow: hidden;
     background-color: #2F4858;
@@ -79,9 +79,9 @@ a.active {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 17px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .headerBox a:hover {
@@ -89,53 +89,61 @@ a.active {
     color: #fff;
 }
 
-.headerBox a.active {
+.headerBox a.selected {
     background-color: #005B4B;
     color: #fff;
 }
 
-.headerBox .search-container {
-    float: right;
-}
-
-.headerBox input[type=text] {
-    padding: 8px;
-    padding-left: 10px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-}
-
-.headerBox .search-container button {
-    padding: 6px 10px;
-    margin-right: 8px;
-    background: #FFEDCB;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-@media only screen and (min-width: 600px) {
-    .headerBox .search-container button {
-        margin-top: 8px;
-    }
-}
-
-.headerBox .search-container button:hover {
-    background: #ccc;
-}
-
 /* ===========================================
-=========================================== */
 
+Footer
+
+=========================================== */
+#footerGroup {
+    bottom: 0;
+    width: 100%;
+}
+
+footer, p.footer {
+    text-align: center;
+    padding: .5em 0 .5em 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(50,50,50); */
+    background-color: #2F4858;
+    color: #fff;
+}
+
+
+a.links:link {
+    color: #A79C8E;
+    text-decoration: none;
+}
+
+
+ /* visited link  */
+a.links:visited {
+    color: #A79C8E;
+    text-decoration: none;
+}
+
+ /* mouse over link  */
+a.links:hover {
+    color: #4B8178;
+    text-decoration: none;
+}
+
+ /* selected link  */
+a.links:active {
+    color: #A79C8E;
+    text-decoration: none;
+}
 
 /* ===========================================
 
 Home Screen
 
 =========================================== */
-
 .recipeGrid {
     display: flex;
     flex-direction: row;
@@ -174,15 +182,21 @@ Home Screen
 Result Page CSS 
 
 =========================================== */
-
 .recipeGridResult {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
-.resultImage, .resultImageIngredients {
+.resultImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.resultImageIngredients {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -236,8 +250,6 @@ Media Queries
     }
 
     .miscInfo {
-        /* display: flex; */
-        /* justify-content: space-between; */
         padding: 1em 0 2em 0;
     }
 }    
@@ -263,7 +275,10 @@ Media Queries
 @media screen and (min-width: 320px) and (max-width: 1024px) {
     .recipeGridResult {
         margin: auto 2em;
-        padding-bottom: 3em;
+    }
+
+    .modalContent {
+        width: 75%;
     }
 }
 
@@ -271,11 +286,35 @@ Media Queries
     .recipeGridResult {
         margin: auto 10em;
     }
+
+    .resultImage {
+        width: 50%;
+    }
+
+    .resultImageIngredients {
+        width: 75%;
+    }
+
+    .modalContent {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 1224px) and (max-width: 1424px) {
     .recipeGridResult {
         margin: auto 15em;
+    }
+
+    .resultImage {
+        width: 50%;
+    }
+
+    .resultImageIngredients {
+        width: 75%;
+    }
+
+    .modalContent {
+        width: 35%;
     }
 }
 
@@ -284,19 +323,31 @@ Media Queries
         margin: auto 20em;
     }
     
-    .resultImage, .resultImageIngredients {
+    .resultImage {
+        width: 50%;
+    }
+
+    .resultImageIngredients {
         width: 75%;
+    }
+
+    .modalContent {
+        width: 35%;
     }
 }
 
 @media screen and (min-width: 1824px) and (max-width: 4096px) {
     .recipeGridResult {
-        margin: auto 30em;
+        margin: auto 50em;
         text-align: center;
     }
 
-    .resultImage, .resultImageIngredients {
+    .resultImage {
         width: 60%;
+    }
+
+    .resultImageIngredients {
+        width: 75%;
     }
 }
 
@@ -306,49 +357,20 @@ Media Queries
         text-align: center;
     }
 
-    .resultImage, .resultImageIngredients {
+    .resultImage {
         width: 75%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .headerBox .search-container {
-        float: none;
-    }
-    
-    .headerBox a, .headerBox input[type=text], .headerBox {
-        float: none;
-        text-align: left;
-    }
-
-    .search-container button {
-        float: right;
-        z-index: 99;
-    }
-
-    .headerBox input[type=text] {
-        border: 1px solid #fff;  
-        width: 77%;
-        z-index: 1;
-    }
-
-    .headerBox input[type=text], .headerBox .search-container button {
-        border-radius: 0;
-        padding: 14px;
-        margin: auto;
+    .resultImageIngredients {
+        width: 75%;
     }
 }   
-
-/* ===========================================
-=========================================== */
-
 
 /* ===========================================
 
 Help Modal
 
 =========================================== */
-
 #myBtn {
     font-family: 'Roboto', sans-serif;
     position: fixed;
@@ -394,7 +416,7 @@ Help Modal
     bottom: 0;
     right: 0;
     background-color: #fefefe;
-    width: 75%;
+    /* width: 75%; */
     height: auto;
     margin-left: 45em;
     -webkit-animation-name: slideIn;
@@ -433,5 +455,84 @@ Help Modal
 .modalBody {
     font-family: 'Calligraphr', sans-serif;
     font-size: 24px;
-    padding: 16px 32px 16px 16px;
+    padding: 16px 32px 1px 16px;
+}
+
+/* ===========================================
+
+Error Page
+
+=========================================== */
+#backBtn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #005B4B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+#backBtn:hover {
+    background-color: #4B8178;
+}
+
+/* ===========================================
+
+New Search Bar
+
+=========================================== */
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchTerm {
+    width: 45%;
+    border-style: none;
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    outline: none;
+    color: #000;
+}
+
+.searchTerm:focus{
+    color: #000:
+}
+
+.searchButton {
+    width: 60px;
+    height: 50px;
+    border: 1px solid #FFEDCB;
+    background: #FFEDCB;
+    text-align: center;
+    color: #000;
+    /* border-radius: 0 5px 5px 0; */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton:hover {
+    background: #4B8178;
+    border: 1px solid #4B8178;
+}
+
+@media screen and (max-width: 600px) {    
+    .headerBox a, .headerBox .searchTerm, .headerBox {
+        float: none;
+        text-align: left;
+    }
+
+    .headerBox .searchTerm {
+        width: 100%;
+        border: 1px solid #fff;
+        z-index: 1;
+        padding: 14px;
+        border-radius: 0;
+    }
 }
