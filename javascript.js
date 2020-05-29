@@ -24,7 +24,8 @@ window.onclick = function(event) {
   }
 }
 
-// Go back a page when this button is clicked.
-function goBack() {
-  window.history.back();
+// Hide Step 6 image when recipe doesn't have 6 steps
+var img = document.getElementById("step6");
+img.onerror = function () { 
+    this.style.display = "none";
 }

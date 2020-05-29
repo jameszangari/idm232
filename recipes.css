@@ -1,36 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Source+Serif+Pro|Montserrat|Ubuntu|&display=swap');
+/* ===========================================
 
-/* STYLE TILE PALETTE https://mycolor.space/?hex=%23A79C8E&sub=1 / FONT: https://fontpair.co/fonts/source-sans-pro */
+Fonts
 
+=========================================== */
+/*----- OilBats -----*/
+@font-face {
+    font-family: 'OilBats';
+    src: url('../media/fonts/oilbats/OilBatsBasic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----- Roboto -----*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('./media/fonts/roboto/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./media/fonts/roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./media/fonts/roboto/Roboto-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*----- Montserrat -----*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./media/fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./media/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*----- Source Sans Pro -----*/
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./media/fonts/sourceSansPro/SourceSansPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./media/fonts/sourceSansPro/SourceSansPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*----- Ubuntu -----*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./media/fonts/ubuntu/Ubuntu-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===========================================
+
+ALL CSS
+
+=========================================== */
 body {
     background-color: #DFE0DF;
 }
 
 h1 {
-    font-family: 'Montserrat Extra Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 32px;
     margin-top: 0;
 }
 
 h2 {
-    font-family: 'Source Sans Pro Bold', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     font-size: 22px;
     margin-top: 0;
 }
 
 h3 {
-    font-family: 'Roboto Medium', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
     margin-top: 0;
 }
 
 h4 {
-    font-family: 'Ubuntu Regular', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
     margin-top: 0;
 }
 
 p,li {
     font-family: 'Source Sans Pro', serif;
-    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
     margin-top: 0;
     list-style: none;
 }
@@ -51,21 +132,21 @@ p b {
     height: auto;
 }
 
-.logoBackground {
-    background-color: rgb(200, 200, 200);
-}
-
 /* ===========================================
 
 Navigation
 
 =========================================== */
-.navMenu, .search-container {
-    font-family: 'Roboto Medium', sans-serif;
+.navMenu {
+    font-family: 'Roboto', sans-serif;
 }
 
 a.selected {
     font-weight: 900;
+}
+
+a.navItem {
+    font-weight: normal;
 }
 
 .headerBox {
@@ -94,6 +175,151 @@ a.selected {
     color: #fff;
 }
 
+/* dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+#darkMode {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: #000;
+  border-radius: 50px;
+  height: 46px;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  z-index: 99;
+}
+
+#darkMode:hover {
+  background-color: #fff;
+}
+
+#moon {
+  font-size: 26px;
+  color: #fff;
+  padding: 0.15em;
+}
+
+#moon:hover {
+  color: #000;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 50px 60px 40px 60px;
+  text-align: center;
+  background-image: url("./media/images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#headerH1 {
+  font-family: 'OilBats', sans-serif;
+  font-size: 52px;
+  text-shadow: 2px 2px 8px #000;
+  margin: 0 auto;
+}
+
+#spoon {
+    max-width: 120px;
+    margin: auto 0;
+    padding-top: 0.5em;
+    -webkit-filter: drop-shadow(2px 2px 8px #000);
+    filter:         drop-shadow(2px 2px 8px #000); 
+}
+
+#logoHyperlink {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 48px;
+    }
+
+    #headerParagraph {
+      font-size: 16px;
+    }
+}
+
+/* ===========================================
+
+Search Bar
+
+=========================================== */
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchTerm {
+    font-family: 'Source Sans Pro', serif;
+    font-size: 18px;
+    border-style: none;
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    outline: none;
+    color: #000;
+}
+
+.searchTerm:focus{
+    color: #000;
+}
+
+.searchButton {
+    width: 60px;
+    height: 50px;
+    border: 1px solid #FFEDCB;
+    background: #FFEDCB;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton:hover {
+    background: #4B8178;
+    border: 1px solid #4B8178;
+}
+
+@media screen and (max-width: 600px) {
+    .headerBox a, .headerBox .searchTerm, .headerBox {
+        float: none;
+        text-align: left;
+    }
+
+    .headerBox .searchTerm {
+        width: 100%;
+        border: 1px solid #fff;
+        z-index: 1;
+        padding: 14px;
+        border-radius: 0;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .searchTerm {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1224px){
+    .searchTerm {
+        width: 45%;
+    }
+}
+
 /* ===========================================
 
 Footer
@@ -104,16 +330,56 @@ Footer
     width: 100%;
 }
 
-footer, p.footer {
-    text-align: center;
-    padding: .5em 0 .5em 0;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    /* background-color: rgb(50,50,50); */
-    background-color: #2F4858;
-    color: #fff;
+#footerErrorGroup {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
+.footer {
+  padding: 12px;
+  text-align: center;
+  background: #252525;
+}
+  
+#footerText {
+  font-family: 'Overpass', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+#footerCopyright {
+    font-family: 'Overpass', Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 14px;
+}
+
+#footerLink:link {
+    color: #4B8178;
+    text-decoration: none;
+}
+
+#footerLink:visited {
+    color: #005b4b;
+    text-decoration: none;
+}
+
+#footerLink:hover {
+    color: #ffedcb;
+    text-decoration: none;
+}
+
+#cliffGif {
+    max-width: 50px;
+    height: auto;
+    margin: auto 0;
+    padding-bottom: 4px;
+}
 
 a.links:link {
     color: #A79C8E;
@@ -150,36 +416,77 @@ Home Screen
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+img#main {
+    width: 230px;
+    height: 230px;
+    /* border: 2px solid #FFFFF3; */
+    border-radius: 24px;
 }
 
 .individualRecipe {
-    padding: 1.5rem;
+    padding: 1.5em;
     text-decoration: none;
+}
+
+.individualRecipe {
+    text-decoration: none;
+}
+
+.recipeHyperlink:hover {
+    transition: 0.5s;
+    color: #FFFFF3;
+}
+
+.individualRecipe:hover {
+    transition: 0.3s;
+    color: #FFFFF3;
+    background-color: #73695C;
+    border-radius: 24px;
 }
 
 .recipeHyperlink {
     text-decoration: none;
-    color: #000;
-}
-
-.recipeHyperlink:hover {
-    transition: 0.3s;
-    color: #FFFFF3;
-    background-color: #73695C;
 }
 
 .gridTitle {
-    font-size: 18px;
-    padding-top: 1em;
+    font-size: 20px;
+    padding-top: 0.5em;
+    cursor: default;
 }
 
 .gridTitle, .gridSide {
     width: 230px;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    cursor: default;
+}
+
+@media screen and (max-width:555px) {
+    img#main {
+        width: 345px;
+        height: 345px;
+    }
+
+    .gridTitle {
+        font-size: 28px;
+    }
+
+    .gridSide {
+        font-size: 22px;
+    }
+
+    .gridTitle, .gridSide {
+        width: 345px;
+        padding-top: 1em;
+    }
 }
 
 /* ===========================================
 
-Result Page CSS 
+Result Page CSS
 
 =========================================== */
 .recipeGridResult {
@@ -194,6 +501,7 @@ Result Page CSS
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    border-radius: 8%/10%;
 }
 
 .resultImageIngredients {
@@ -205,12 +513,16 @@ Result Page CSS
 }
 
 .resultTitle {
+    font-size: 36px;
     text-align: center;
     margin-top: 0;
 }
 
 .resultSide {
+    margin-top: 0;
     text-align: center;
+    font-weight: 600;
+    font-size: 26px;
 }
 
 .resultImage, .resultImageIngredients {
@@ -228,12 +540,13 @@ Result Page CSS
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 40%;
+    width: 50%;
+    border-radius: 24px;
 }
 
 /* ===========================================
 
-Media Queries 
+Media Queries
 
 =========================================== */
 
@@ -244,20 +557,48 @@ Media Queries
     }
 }
 
+@media only screen and (max-width : 600px) {
+    .resultImage {
+        width: 90%;
+    }
+
+    .stepsImages {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 600px) {
+    .resultImage {
+        width: 60%;
+    }
+
+    .resultImageIngredients {
+        width: 60%;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .mainLogo {
         width: 40%;
     }
 
+    .resultImage {
+        width: 50%;
+    }
+
     .miscInfo {
         padding: 1em 0 2em 0;
     }
-}    
+}
 
 /* Desktops and laptops ----------- */
 @media screen and (min-width: 1224px) {
     .recipeGrid {
         margin: auto 2em;
+    }
+
+    .resultImage {
+        width: 40%;
     }
 
     .mainLogo {
@@ -292,7 +633,7 @@ Media Queries
     }
 
     .resultImageIngredients {
-        width: 75%;
+        width: 65%;
     }
 
     .modalContent {
@@ -302,15 +643,15 @@ Media Queries
 
 @media screen and (min-width: 1224px) and (max-width: 1424px) {
     .recipeGridResult {
-        margin: auto 15em;
+        margin: auto 18em;
     }
 
     .resultImage {
-        width: 50%;
+        width: 40%;
     }
 
     .resultImageIngredients {
-        width: 75%;
+        width: 65%;
     }
 
     .modalContent {
@@ -320,15 +661,15 @@ Media Queries
 
 @media screen and (min-width: 1424px) and (max-width: 1824px) {
     .recipeGridResult {
-        margin: auto 20em;
+        margin: auto 28em;
     }
-    
+
     .resultImage {
-        width: 50%;
+        width: 40%;
     }
 
     .resultImageIngredients {
-        width: 75%;
+        width: 50%;
     }
 
     .modalContent {
@@ -364,7 +705,7 @@ Media Queries
     .resultImageIngredients {
         width: 75%;
     }
-}   
+}
 
 /* ===========================================
 
@@ -483,56 +824,37 @@ Error Page
 
 /* ===========================================
 
-New Search Bar
+Error Page
 
 =========================================== */
-.search {
+.errorResult {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 15em;
 }
 
-.searchTerm {
-    width: 45%;
-    border-style: none;
-    border-right: none;
-    padding: 15px;
-    height: 20px;
-    outline: none;
-    color: #000;
+.resultErrorImage {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
 }
 
-.searchTerm:focus{
-    color: #000:
-}
-
-.searchButton {
-    width: 60px;
-    height: 50px;
-    border: 1px solid #FFEDCB;
-    background: #FFEDCB;
+.errorButton {
     text-align: center;
-    color: #000;
-    /* border-radius: 0 5px 5px 0; */
-    cursor: pointer;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 0;
 }
 
-.searchButton:hover {
-    background: #4B8178;
-    border: 1px solid #4B8178;
-}
-
-@media screen and (max-width: 600px) {    
-    .headerBox a, .headerBox .searchTerm, .headerBox {
-        float: none;
-        text-align: left;
-    }
-
-    .headerBox .searchTerm {
-        width: 100%;
-        border: 1px solid #fff;
-        z-index: 1;
-        padding: 14px;
-        border-radius: 0;
-    }
+.errorLink {
+    text-align: center;
+    text-decoration: none;
+    background-color: #005B4B;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
