@@ -12,4 +12,4 @@
     <!-- <button id="backBtn" onclick="goHome()">Home</button> -->
 </div>
 
-<?php require './includes/_footerError.php'; ?>
+<?php require './includes/_footer.php'; ?>

@@ -5,6 +5,15 @@
 
 <div class="recipeGrid"> 
 <?php 
+  // Perform Database Query
+  $query = "SELECT * FROM recipes";
+  $result = mysqli_query($connection, $query);
+
+
+  // Check there are no errors with SQL statement
+  if (!$result) {
+    die ("Database query failed.");
+}
     while ($row = mysqli_fetch_assoc($result)) { 
 ?>
 
@@ -17,9 +26,9 @@
 
 <?php
     }
-	// Step 4: Release Returned Data
+	// Release Returned Data
 	mysqli_free_result($result);
-	// Step 5: Close Database Connection
+	// Close Database Connection
 	mysqli_close($connection);
 ?>
 </div>

@@ -19,8 +19,9 @@ $id = isset($_GET["id"]) ? mysqli_real_escape_string($connection, $_GET["id"]) :
     $result = mysqli_query($connection, $query);
 
     while ($row = mysqli_fetch_assoc($result)) { 
-    // Step 4: Release Returned Data
-	  mysqli_free_result($result);
+      if (!$result) {
+        die ("Database query failed.");
+    }
 ?>
     <img class="resultImage" src="./media/recipeImages/<?php echo $row['images']; ?>/main_pic.jpg" alt="<?php echo $row['title']; ?>">
     <br>
@@ -95,7 +96,9 @@ $id = isset($_GET["id"]) ? mysqli_real_escape_string($connection, $_GET["id"]) :
 
 <?php
     }
-	// Step 5: Close Database Connection
+	// Release Returned Data
+	mysqli_free_result($result);
+	// Close Database Connection
 	mysqli_close($connection);
 ?>
 

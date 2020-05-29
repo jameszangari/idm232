@@ -330,12 +330,6 @@ Footer
     width: 100%;
 }
 
-#footerErrorGroup {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
-
 .footer {
   padding: 12px;
   text-align: center;
@@ -801,7 +795,6 @@ Help Modal
 
 /* ===========================================
 
-Error Page
 
 =========================================== */
 #backBtn {
@@ -831,7 +824,7 @@ Error Page
     display: flex;
     flex-direction: column;
     padding-top: 1em;
-    padding-bottom: 15em;
+    padding-bottom: 10em;
 }
 
 .resultErrorImage {

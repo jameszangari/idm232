@@ -36,9 +36,9 @@
 <div class="headerBox">
     <div class="navMenu">
         <a class="selected" href="index.php">Home</a>
-        <a class="navItem" href="">Meat</a>
-        <a class="navItem" href="">Fish</a>
-        <a class="navItem" href="">Vegetarian</a>
+        <a class="navItem" href="meat.php">Meat</a>
+        <a class="navItem" href="fish.php">Fish</a>
+        <a class="navItem" href="vegetarian.php">Vegetarian</a>
     </div>
     <form action="search.php" method="POST">
         <div class="search">

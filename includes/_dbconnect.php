@@ -1,24 +1,21 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$db = "cookbook";
-// Create connection
-$connection = mysqli_connect($servername, $username, $password, $db);
-// Check connection
-if (!$connection) {
-   die("Connection failed: " . mysqli_connect_error());
-}
-//echo "Connected successfully";
-
-// Step 2: Preform Database Query
-$query = "SELECT * FROM recipes";
-$result = mysqli_query($connection, $query);
-
-
-// Check there are no errors with SQL statement
-if (!$result) {
-    die ("Database query failed.");
+$host = $_SERVER['HTTP_HOST'];
+if ($host == 'localhost:8888') {
+  // Local database credentials
+  $dbhost = "localhost";
+  $dbuser = "root";
+  $dbpass = "root";
+  $dbname = "cookbook";
 }
 
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+if (mysqli_connect_errno()) {
+  die("Database connection failed: " .
+    mysqli_connect_error() .
+    " (" . mysqli_connect_errno() . ")"
+  );
+}
+
+mysqli_set_charset($connection,"utf8");
 ?>
