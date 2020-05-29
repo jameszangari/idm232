@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="caseStyle.css">
+    <script src="https://kit.fontawesome.com/080c06f1d6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="../media/logos/thewoodenspoonFavicon.png"/>
+    <title>The Wooden Spoon</title>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <button id="modeSwitcher" onclick="darkMode()">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+    function darkMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+    <h1>The Wooden Spoon</h1>
+    <img src="./images/woodenSpoon.png" alt="Spoon" id="spoon">
+    <p id="headerParagraph">A dynamic, responsive digital recipe cookbook.</p>
+  </div>
+  
+  <!-- The flexible grid (content) -->
+<div class="row">
+  <div class="main">
+    <h1 class="caseHeader">CASE STUDY</h1>
+    <h2>OVERVIEW</h2>
+    <p>In a timeline of roughly nine weeks, I was challenged with designing and developing a recipe database website using HTML, CSS, JavaScript and PHP for "IDM 232: Scripting for Interactive Digital Media II" at Drexel University. The final product is a dynamic, responsive recipe cookbook containing a database of 40 recipes while includes nutrition information, cook times, serving sizes, ingredients, steps, and images.</p>
+    
+    <h2>CONTEXT & CHALLENGE</h2>
+    <p>This project was focused around implementing PHP and using MAMP (Macintosh-based local server enviroment) to produce a website for of 40 recipes. All of the recipe components were compiled in a <span>.zip</span> file and this asset folder included necessary information to fill the content of the HTML webpages:</p>
+    <ul>
+      <li>40 <span>.pdf</span>'s containing all of the recipe information</li>
+      <li>40 folders of miscellaneous images containing <span>.jpg</span> and <span>.png</span> files</li>
+    </ul>
+    <p>This asset folder was distributed at the beginning of the class to be organized into an <span>.xlsx</span> (Microsoft Excel) file, which would then be imported into phpMyAdmin to handle the administration of MySQL over the Web.</p>
+    <p>The purpose of this project was to learn the basics of PHP and to understand how to create, update and maintain databases for MySQL.</p>
+    
+    <img src="../media/assets/caseStudy/htmlCaptures/phpMyAdmin.png" class="image">
+    <span class="imageCaption">myPHPAdmin Database screenshot</span>
+
+    <h2>PROCESS</h2>
+    <p>After going through all of the assets, I decided that a grid layout would work best for this project. It would provide the most visual appeal for a large collection of images and provide the most ease if there was ever a need to update the database with more recipes.</p>
+    <h4>PROCESS: IMAGES</h4>
+    
+    <img src="../media/assets/caseStudy/wireframeSketches/homePage.png" class="image">
+    <span class="imageCaption"><strong>Home Page Sketch</strong> (left: Desktop, right: Mobile)</span>
+    <img src="../media/assets/caseStudy/htmlCaptures/homePageNew.png" class="image">
+    <span class="imageCaption"><strong>Home Page Final</strong> (left: Desktop, right: Mobile)</span>
+    <img src="../media/assets/caseStudy/wireframeSketches/resultPage.png" class="image">
+    <span class="imageCaption"><strong>Result Page Sketch</strong> (left: Desktop, right: Mobile)</span>
+    <img src="../media/assets/caseStudy/htmlCaptures/resultPageNew.png" class="image">
+    <span class="imageCaption"><strong>Result Page Final</strong> (left: Desktop, right: Mobile)</span>
+    
+    <h2>PROCESS (CONT.)</h2>
+    <p>Next, I designed the logo for the site and decided on the fonts, colors, and form/button styles that would appear across the webpages.</p>
+    <img src="../media/assets/caseStudy/styleTile/style_tile.png" class="image">
+    <span class="imageCaption">Style Tile</span>
+
+    <p class="pUnderImg">A requirement for this project was to incorporate some sort of help page. In order to reduce the amount of navigation on the site, I decided to add a Modal (dialog box/popup window) that provided information on how to navigate and use the site.</p>
+    <img src="../media/assets/caseStudy/htmlCaptures/helpModal.png" class="image">
+    
+    <span class="imageCaption"><strong>Help Modal Box</strong> (left: Home Page, right: Result Page)</span>
+
+    <p class="pUnderImg">Another requirement was to have a filter system. I intergrated this feature into the navigation menu by adding 3 buttons for categories of recipes (<b>Meat</b>, <b>Fish</b>, and <b>Vegetarian</b>), as well as a search bar to filter results based on keywords inputted by the user.</p>
+    
+    <img src="../media/assets/caseStudy/htmlCaptures/navMenu.png" class="image">
+    <span class="imageCaption"><strong>Navigation Menu</strong> (left: Desktop, right: Mobile)</span>
+
+    <h2>SOLUTION</h2>
+    <p>The goal of this website was to create a fluid, simple digital recipe cookbook with the intent of adding more content in the future. The basic grid structure of the site allows for this to be a possibility.</p>
+
+    <h2>RESULTS</h2>
+    <p>While my final site demonstrates the use of <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span> for its overall design and appearance, the primary focus was to learn how to implement <span>PHP</span> into these languages and build my knowledge around its usage.</p>
+
+    <p class="pUnderImg">You can visit the live version of the final project below:</p>
+    <a href="https://jamescliff.com" target="_blank" id="projectButton">The Wooden Spoon</a>
+  </div>
+</div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <h2 id="footerText">Designed by <a href="https://jamescliff.com" target="_blank" id="footerLink">James Cliff</a></h2>
+    <p id="footerCopyright">Copyright © 2020. All Rights Reserved.</p>
+    <a href="https://jamescliff.com" target="_blank" ><img src="https://www.jamescliff.com/media/logos/cliff_animation.gif" alt="James Cliff logo" id="cliffGif"></a>
+  </div>
+</body>
+</html>
