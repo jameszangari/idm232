@@ -6,7 +6,8 @@ Fonts
 /*----- OilBats -----*/
 @font-face {
     font-family: 'OilBats';
-    src: url('../media/fonts/oilbats/OilBatsBasic.woff2') format('woff2');
+    src: url('./media/fonts/oilbats/OilBatsBasic.woff') format('woff');
+    src: url('./media/fonts/oilbats/OilBatsBasic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -458,10 +459,18 @@ img#main {
     cursor: default;
 }
 
-@media screen and (max-width:555px) {
+@media screen and (max-width: 555px) {
+    #headerH1 {
+        font-size: 32px;
+    }
+
+    #spoon {
+        max-width: 80px;
+    }
+
     img#main {
-        width: 345px;
-        height: 345px;
+        width: 315px;
+        height: 315px;
     }
 
     .gridTitle {
@@ -473,7 +482,7 @@ img#main {
     }
 
     .gridTitle, .gridSide {
-        width: 345px;
+        width: 315px;
         padding-top: 1em;
     }
 }
