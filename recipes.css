@@ -142,14 +142,6 @@ Navigation
     font-family: 'Roboto', sans-serif;
 }
 
-a.selected {
-    font-weight: 900;
-}
-
-a.navItem {
-    font-weight: normal;
-}
-
 .headerBox {
     overflow: hidden;
     background-color: #2F4858;
@@ -161,9 +153,10 @@ a.navItem {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 15px 17px;
+    padding: 10px 17px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: normal;
 }
 
 .headerBox a:hover {
@@ -173,7 +166,7 @@ a.navItem {
 
 .headerBox a.selected {
     background-color: #005B4B;
-    color: #fff;
+    font-weight: 900;
 }
 
 /* dark mode */
@@ -216,7 +209,7 @@ a.navItem {
 .header {
   padding: 50px 60px 40px 60px;
   text-align: center;
-  background-image: url("./media/images/hero.jpg");
+  background-image: url("./media/images/hero_wide.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -804,28 +797,6 @@ Help Modal
 
 /* ===========================================
 
-
-=========================================== */
-#backBtn {
-    font-family: 'Roboto', sans-serif;
-    background-color: #005B4B;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0 auto;
-    border-radius: 4px;
-}
-
-#backBtn:hover {
-    background-color: #4B8178;
-}
-
-/* ===========================================
-
 Error Page
 
 =========================================== */
@@ -837,7 +808,7 @@ Error Page
 }
 
 .resultErrorImage {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 2em 0 2em 0;

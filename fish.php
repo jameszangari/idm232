@@ -1,5 +1,6 @@
+<?php $page = "Fish"; ?>
 <?php require './includes/_dbconnect.php'; ?>
-<?php $title = "Meat";?>
+<?php $title = "Fish";?>
 <?php require './includes/_header.php'; ?>
 
 <div class="recipeGrid"> 

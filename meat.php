@@ -1,3 +1,4 @@
+<?php $page = "Meat"; ?>
 <?php require './includes/_dbconnect.php'; ?>
 <?php $title = "Meat";?>
 <?php require './includes/_header.php'; ?>

@@ -28,18 +28,44 @@
     <a href="index.php" id="logoHyperlink"><h1 id="headerH1">The Wooden Spoon</h1>
     <img src="./media/logos/woodenSpoon.png" alt="Spoon" id="spoon"></a>
 </div>
-
-<!-- <div class="logoBackground">
-    <a href="index.php"><img src="./media/logos/thewoodenspoonLogo2.png" alt="The Wooden Spoon Logo" class="mainLogo"></a>
-</div> -->
     
 <div class="headerBox">
-    <div class="navMenu">
-        <a class="selected" href="index.php">Home</a>
-        <a class="navItem" href="meat.php">Meat</a>
-        <a class="navItem" href="fish.php">Fish</a>
-        <a class="navItem" href="vegetarian.php">Vegetarian</a>
-    </div>
+    <ol class="navMenu">
+        <?php 
+            if ($page == "Home") { ?>
+                <li><a href="index.php" class="selected">Home</a></li>
+        <?php } 
+            else { ?>
+                <li><a href="index.php">Home</a></li><?php 
+        } ?>
+
+
+        <?php 
+            if ($page == "Meat") { ?>
+                <li><a href="meat.php" class="selected">Meat</a></li>
+        <?php } 
+            else { ?>
+                <li><a href="meat.php">Meat</a></li><?php 
+        } ?>
+
+
+        <?php 
+            if ($page == "Fish") { ?>
+                <li><a href="fish.php" class="selected">Fish</a></li>
+        <?php } 
+            else { ?>
+                <li><a href="fish.php">Fish</a></li><?php 
+        } ?>
+
+
+        <?php 
+            if ($page == "Vegetarian") { ?>
+                <li><a href="vegetarian.php" class="selected">Vegetarian</a></li>
+        <?php } 
+            else { ?>
+                <li><a href="vegetarian.php">Vegetarian</a></li><?php 
+        } ?>
+    </ol>
     <form action="search.php" method="POST">
         <div class="search">
             <input type="text" class="searchTerm" placeholder="What are you looking for?" name="query">

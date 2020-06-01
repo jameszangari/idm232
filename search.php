@@ -39,8 +39,15 @@
 }
     }
     else {
-        //echo "There are no results for your search.";
-        header("Location: error.php");
+        echo "<div class=\"errorResult\">";
+        echo "<img class=\"resultErrorImage\" src=\"./media/assets/kitchenDisaster2.gif\" alt=\"Error Image\">";
+        echo "<h1 class=\"resultTitle\">Sorry!</h1>";
+        echo "<h3 class=\"resultSide\">We can't find that page.</h3>";
+        echo "<br>";
+        echo "<a href=\"index.php\" class=\"errorLink\">";
+        echo "<h4 class=\"errorButton\">Home</h4>";
+        echo "</a>";
+        echo "</div>";
     }
 }
 	  // Release Returned Data

@@ -1,7 +1,7 @@
+<?php $page = "Home"; ?>
 <?php require './includes/_dbconnect.php'; ?>
 <?php $title = "The Wooden Spoon";?>
 <?php require './includes/_header.php'; ?>
-
 
 <div class="recipeGrid"> 
 <?php 
@@ -19,7 +19,7 @@
 
 <div class="individualRecipe">
     <a href="result.php?id=<?php echo $row['id']; ?>" class="recipeHyperlink">
-    <img src="./media/recipeImages/<?php echo $row['images']; ?>/main_pic.jpg" alt="<?php echo $row['title']; ?>" id="main"></a>
+    <img src="./media/recipeImages/<?php echo $row['images']; ?>/main_pic_1x.jpg" alt="<?php echo $row['title']; ?>" id="main"></a>
     <h2 class="gridTitle"><?php echo $row['title']; ?></h2>
     <p class="gridSide">with <?php echo $row['side']; ?></p>
 </div>  
