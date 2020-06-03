@@ -408,8 +408,8 @@ Home Screen
 }
 
 img#main {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     /* border: 2px solid #FFFFF3; */
     border-radius: 24px;
 }
@@ -446,7 +446,7 @@ img#main {
 }
 
 .gridTitle, .gridSide {
-    width: 230px;
+    width: 200px;
     margin: 0 auto;
     padding-top: 0.5em;
     cursor: default;
