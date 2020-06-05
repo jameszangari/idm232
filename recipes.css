@@ -793,6 +793,7 @@ Help Modal
     font-family: 'Calligraphr', sans-serif;
     font-size: 24px;
     padding: 16px 32px 1px 16px;
+    color: #000;
 }
 
 /* ===========================================
@@ -830,4 +831,8 @@ Error Page
     max-width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+
+.errorLink:hover {
+    background-color: #4B8178;
 }
